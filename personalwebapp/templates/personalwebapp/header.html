@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advait Joshi</title>
+	{%load staticfiles%}
+	<link rel="stylesheet" type="text/css" href="{%static 'personalwebapp/css/bootstrap.min.css'%}">
+	<style type="text/css">
+
+	</style>
+</head>
+<body style="background-color: #f1f2f6">
+		<nav class="navbar navbar-light d-flex justify-content-center" style="">
+			  <a class="navbar-brand" href="#">Advait Joshi</a>
+			   
+		</nav>
+	<div class="container">
+	<div class="row" style="padding:5%;">
+		<div class="col-sm-2 col-md-2" style="background-color: #f6f6f6; border: solid black 1px; border-radius: 10px;">
+			<ul class="nav flex-column" >
+				  <li class="nav-item">
+				    <a class="nav-link active" href="/home/">Home</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="/blog/">Blog</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="/contact/">contact</a>
+				  </li>
+				  
+			</ul>
+		</div>
+			
+		<div class="col-sm-6 col-md-6"> 
+			{%block content%}
+			{%endblock%}
+		</div>
+
+	</div>
+	</div>
+</body>
+</html>
